@@ -26,26 +26,25 @@
 </head>
 
 <body>
-	<div class="container border my-2">
+	<div>
 
 		<h2 class="p-2 text-bg-dark text-center border-dark-subtle border-bottom ">Movie Review</h2>
 
-		<form class="container" id="myForm">
+		<form class="container border rounded-2 mt-3 p-3" id="myForm" style="width: 90%;">
 			<div class="mb-3">
-				<label for="movieNameInput" class="input-label p-2">Movie Name</label>
+				<label for="movieNameInput" class="input-label py-2">Movie Name</label>
 				<input type="text" class="form-control" id="movieNameInput" name="movieName" required>
 			</div>
 
 			<div class="mb-3">
 				<div class="d-flex">
-					<div class="input-lable p-2 w-50" id="basic-addon1">Category</div>
+					<div class="input-lable py-2 w-50" id="basic-addon1">Category</div>
 
 					<div class=" w-50 d-flex justify-content-end">
 						<a href="add_category.html" id="addCategory" class="btn "><span class="material-symbols-outlined">add_circle</span></a>
 					</div>
 				</div>
 
-				<!-- <div class="d-flex flex-wrap justify-content-evenly border border p-2" style="width: 90%;"> -->
 				<div class="row p-2 mx-0 border rounded" id="categoryInput" required>
 
 				</div>
@@ -54,21 +53,20 @@
 			<div class="mb-3">
 
 				<div class="d-flex">
-					<label for="castAndCrewInput" class="input-lable p-2 w-50">Cast & Crew</label>
+					<label for="castAndCrewInput" class="input-lable py-2 w-50">Cast & Crew</label>
 
 					<div class="w-50 d-flex justify-content-end">
 						<a href="add_cast.html" id="addRating" class="btn"><span class="material-symbols-outlined">add_circle</span></a>
 					</div>
 				</div>
-				<select class="form-select cast-crew-select" name="castAndCrew[]" id="castAndCrewInput"
-					multiple="multiple" required>
+				<select class="form-select" name="castAndCrew[]" id="castAndCrewInput" style="width: 100%;" multiple="multiple" required>
 
 				</select>
 			</div>
 
 			<div class="mb-3">
-				<div for="ratingInput" class="input-label p-2">Rating</div>
-				<select class="form-select rating-select" name="rating" id="ratingInput" required>
+				<div for="ratingInput" class="input-label py-2">Rating</div>
+				<select class="form-select" name="rating" id="ratingInput" style="width: 100%;" required>
 					<option></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -87,9 +85,9 @@
 
 		</form>
 
-
-		<div class="mt-5" style="width: 100%;">
-			<table class="table table-striped border" style="height: 100%; width: 100%; overflow: auto;">
+		
+		<div class="container mt-5 mb-3 d-block p-2 table-responsive border rounded-2" style="width: 90%;margin: auto;" >
+			<table class="table table-hover" >
 				<thead>
 					<tr>
 						<th scope="col">#</th>
@@ -101,7 +99,7 @@
 						<th scope="col">Delete</th>
 					</tr>
 				</thead>
-				<tbody id="tableBody">
+				<tbody id="tableBody" class="table-group-divider">
 
 				</tbody>
 			</table>
