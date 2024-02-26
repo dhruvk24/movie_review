@@ -11,6 +11,7 @@ $(document).ready(function () {
       }
     $('#castAndCrewInput').select2({
         placeholder: "Select a cast",
+        width: 'resolve',
         templateResult: hideSelected
     });
     
